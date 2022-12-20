@@ -20,14 +20,16 @@ header {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center;
+    align-items:center ;
+    gap: 20px;
 }
 
 .imagenInicio {
     width: 170px;
     margin-top: 10px;
     margin-left: 15px;
+    
 
 }
 
