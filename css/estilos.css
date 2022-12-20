@@ -1,0 +1,343 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* ------------------ OBJECT FIT */
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url(../img/backgroundTextura.jpg);
+}
+
+/* ------HEADER----- */
+
+header {
+    background-color: #003E58;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.imagenInicio {
+    width: 170px;
+    margin-top: 10px;
+    margin-left: 15px;
+
+}
+
+.login {
+    margin-right: 50px;
+}
+
+.login a {
+    color: white;
+    outline: 1px solid white;
+    padding: 10px;
+}
+
+.botonHeader {
+    color: white;
+    font-weight: 20px;
+    outline: 1px solid white;
+    padding: 12px;
+    margin-right: 20px;
+}
+
+.comenzar {
+    margin-right: 10px;
+}
+
+
+/* ------MAIN------ */
+
+
+/* ----------------INDEX----------------- */
+.tarjeta1 {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.texto {
+    width: 50%;
+    font-size: 20px;
+}
+
+span {
+    font-weight: bold;
+}
+
+.texto .titulo {
+    font-weight: bold;
+    margin-top: 70px;
+}
+
+.texto .parrafo {
+    margin: 15px;
+}
+
+.imagentarjeta {
+    width: 50%;
+    margin: 10px;
+}
+
+hr {
+    width: 50%;
+    margin: 50px;
+}
+
+/* -------TARJETA2----- */
+
+.tarjeta2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.imagentarjeta2 {
+    width: 50%;
+}
+
+.texto2 {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.prefooter {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.prefooter .comencemos p {
+    width: 100%;
+    padding: 15px;
+    font-size: 50px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+
+.botonera {
+    margin-top: 20px;
+    margin-bottom: 100px;
+    gap: 120px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.boton {
+    padding: 15px;
+    font-size: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+
+.ritmo {
+    background-color: aqua;
+    color: black;
+}
+
+.altura {
+    background-color: rgb(157, 95, 214);
+}
+
+.melodia {
+    background-color: rgb(177, 177, 177);
+    color: black;
+}
+
+
+/* ------------------------PAGES------------------------ */
+.contTarjeta1 {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    align-items: center;
+
+    margin: 50px;
+}
+
+.contTarjeta1 .imagenTarjeta1 img {
+    width: 400px;
+    outline: 5px solid black;
+    border-radius: 1px;
+}
+
+.titulo1 {
+    font-size: 56px;
+    font-weight: bold;
+}
+
+.tituloRitmo {
+    background-color: aqua;
+    margin-right: 79%;
+}
+
+.botonRitmo {
+    background-color: aqua;
+    padding: 8px;
+}
+
+
+.parrafo1 {
+    font-size: 26px;
+    margin: 20px;
+    font-weight: lighter;
+}
+
+
+
+.contTopics {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+    margin: 20px;
+
+}
+
+.botonPages {
+    text-decoration: none;
+    font-size: 25px;
+    margin-top: 25px;
+}
+
+.tituloAltura {
+    background-color: rgb(157, 95, 214);
+    margin-right: 80%;
+}
+
+.botonAltura {
+    background-color: rgb(157, 95, 214);
+    padding: 8px;
+    color: black;
+}
+
+.tituloArmonia {
+    background-color: rgb(177, 177, 177);
+    margin-right: 70%;
+}
+
+.botonArmonia {
+    background-color: rgb(177, 177, 177);
+    padding: 8px;
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------------------FOOTER--------------------------- */
+.contenedorFooter {
+    width: 100%;
+    background-color: #003E58;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ig img {
+    width: 20%;
+    margin: 20px;
+    margin-left: 30px;
+}
+
+.upper img {
+    width: 75px;
+    margin: 20px;
+}
+
+.correo {
+    color: white;
+}
+
+
+/* --------------------------------------------------------------LOGIN------------------------------------------- */
+.main{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.formulario{
+    margin: auto;
+    width: 400px;
+    height: 300px;
+    background-color: #003E58;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+.correo label{
+    width: 100%;
+}
+.correo input{
+    
+    width: 70%;
+}
+.contrasena label{
+    
+    width: 100%;
+}
+.contrasena input{
+    
+    width: 70%;
+}
+.mantener label{
+    
+    width: 95%;
+}
+.mantener input{
+    
+    width: 5%;
+}
+
+.aceptar{
+    margin: auto;
+}
