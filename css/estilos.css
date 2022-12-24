@@ -463,14 +463,13 @@ hr {
 
 
     /* ---------MAIN--------- */
-    .tarjeta2,
-    .login {
+    .tarjeta2, .login {
         display: none;
     }
 
 
     .prefooter .comencemos p {
-        font-size: 50px;
+        font-size: 40px;
         margin-top: 25px;
     }
 
@@ -550,6 +549,7 @@ hr {
         justify-content: space-around;
         gap: 20px;
         margin: 20px;
+        margin-bottom: 100px;
     }
 
     .imgPages img{
