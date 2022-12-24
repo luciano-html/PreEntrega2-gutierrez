@@ -56,7 +56,7 @@ header {
     color: white;
     font-size: 25px;
     font-weight: 20px;
-    /* outline: 1px solid white; */
+    outline: 1px solid white;
     padding: 12px;
     margin-right: 20px;
     text-decoration: underline solid 1px rgba(255, 255, 255, 0);
