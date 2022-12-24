@@ -215,7 +215,7 @@ hr {
 .contTarjeta1 .imagenTarjeta1 img:hover{
     transform: scale(1.05);
 }
-.contTarjeta1 .imagenTarjeta1 img
+
 
 
 
@@ -296,6 +296,35 @@ hr {
     color: black;
 }
 
+
+.titulosPages{
+    font-size: 38px;
+    margin: 25px;
+}
+
+.parrafosPages{
+    font-size: 18px;
+    margin: 45px;
+    line-height: 45px;
+    background-color: rgba(128, 128, 128, 0.253);
+    padding: 10px;
+}
+
+.imgPages{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.imgPages img{
+    margin: 20px;
+    
+}
+
+.subtPages{
+    font-size: 25px;
+    margin: 35px;
+}
 
 
 
