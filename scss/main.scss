@@ -36,7 +36,15 @@ header {
     .imagenInicio {
         width: 200px;
         margin: 20px;
-        padding: 5px;
+        padding: 8px;
+        outline: solid 1px rgba(255, 255, 255, 0);
+
+        &:hover {
+            outline: solid 1px rgba(255, 255, 255, 1);
+            transition-duration: 200ms;
+        }
+
+
     }
 
     .botoneraHeader {
@@ -84,12 +92,69 @@ main {
         }
 
         .imgTarjeta1 {
-            
+
             img {
                 @include imagenes();
-                
+
             }
         }
     }
-    
+
+    .tarjeta2 {
+        @include flexbox();
+        margin: 50px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        .imgTarjeta2 {
+            width: 40%;
+
+            img {
+                @include imagenes();
+            }
+        }
+
+        .texto2 {
+            width: 60%;
+        }
+    }
+
+    .prefooter {
+        @include flexbox();
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        margin: 100px;
+        gap: 100px;
+
+        .comencemos {
+            p {
+                width: 100%;
+                font-size: 50px;
+                font-weight: bold;
+            }
+        }
+
+        .botoneraPrefooter {
+            @include flexbox();
+            gap: 70px;
+
+            .boton {
+                text-decoration: underline solid 1px rgba(255, 255, 255, 0);
+                font-size: 30px;
+                background-color: $colorPrincipal;
+                color: white;
+                padding: 20px;
+
+                &:hover {
+                    text-decoration: underline solid 1px rgba(255, 255, 255, 1);
+                    transition-duration: 200ms;
+                }
+
+
+            }
+        }
+    }
 }
