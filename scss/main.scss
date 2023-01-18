@@ -157,4 +157,36 @@ main {
             }
         }
     }
+
+    footer {
+        .contenedorFooter {
+            @include flexbox();
+            background-color: $colorPrincipal;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+
+            .ig {
+                img {
+                    width: 20%;
+                    margin: 20px;
+                    margin-left: 30px;
+                }
+            }
+
+            .correo {
+                color: white;
+            }
+
+            .upper {
+                img {
+                    width: 75px;
+                    margin: 20px;
+                }
+            }
+        }
+
+
+
+    }
 }

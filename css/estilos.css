@@ -119,5 +119,25 @@ main .prefooter .botoneraPrefooter .boton:hover {
   text-decoration: underline solid 1px rgb(255, 255, 255);
   transition-duration: 200ms;
 }
+main footer .contenedorFooter {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #003E58;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+main footer .contenedorFooter .ig img {
+  width: 20%;
+  margin: 20px;
+  margin-left: 30px;
+}
+main footer .contenedorFooter .correo {
+  color: white;
+}
+main footer .contenedorFooter .upper img {
+  width: 75px;
+  margin: 20px;
+}
 
 /*# sourceMappingURL=estilos.css.map */
