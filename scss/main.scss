@@ -9,6 +9,10 @@ body {
 }
 
 $colorPrincipal: #003E58;
+$colorRitmo: #00ffff;
+$colorAltura: rgb(157, 95, 214);
+$colorArmonia: rgb(177, 177, 177);
+
 
 @mixin flexbox() {
     display: flex;
@@ -51,6 +55,7 @@ header {
         @include flexbox();
         gap: 50px;
         font-size: 25px;
+        margin: 25px;
 
         .botonHeader {
             color: white;
@@ -157,36 +162,179 @@ main {
             }
         }
     }
+}
 
-    footer {
-        .contenedorFooter {
-            @include flexbox();
-            background-color: $colorPrincipal;
-            flex-direction: row;
-            align-items: center;
-            justify-content: space-between;
+footer {
+    .contenedorFooter {
+        @include flexbox();
+        background-color: $colorPrincipal;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
 
-            .ig {
-                img {
-                    width: 20%;
-                    margin: 20px;
-                    margin-left: 30px;
-                }
-            }
-
-            .correo {
-                color: white;
-            }
-
-            .upper {
-                img {
-                    width: 75px;
-                    margin: 20px;
-                }
+        .ig {
+            img {
+                width: 20%;
+                margin: 20px;
+                margin-left: 30px;
             }
         }
+
+        .correo {
+            color: white;
+        }
+
+        .upper {
+            img {
+                width: 75px;
+                margin: 20px;
+            }
+        }
+
+        .botonHeader {
+            color: white;
+            padding: 15px;
+            outline: 1px solid white;
+            text-decoration: underline solid 1px rgba(255, 255, 255, 0);
+
+            &:hover {
+                text-decoration: underline solid 1px rgba(255, 255, 255, 1);
+                transition-duration: 200ms;
+            }
+        }
+    }
+
+
+
+}
+
+
+// PAGES
+.contPages1 {
+    @include flexbox();
+    align-items: center;
+    flex-direction: row;
+    margin: 100px;
+
+
+    .imagenPages1 {
+        width: 40%;
+
+        img {
+            @include imagenes();
+        }
+    }
+
+    .textoPages {
+        width: 60%;
+
+        .tituloPages {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 22px;
+        }
+
+        .tituloRitmo {
+            background-color: $colorRitmo;
+        }
+
+        .tituloAltura {
+            background-color: $colorAltura;
+        }
+
+        .tituloArmonia {
+            background-color: $colorArmonia;
+        }
+
+
+
+
 
 
 
     }
 }
+
+.botonIndice {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 60px;
+    justify-items: center;
+    align-items: center;
+    margin-bottom: 50px;
+
+    .botonPages {
+        text-decoration: none;
+        font-size: 25px;
+        margin-top: 25px;
+        transition-duration: 50ms;
+        padding: 10px;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+
+    .botonRitmo {
+        color: black;
+        background: $colorRitmo;
+
+    }
+
+    .botonAltura {
+        background-color: $colorAltura;
+        color: black;
+    }
+
+    .botonArmonia {
+        background-color: $colorArmonia;
+        color: black;
+    }
+}
+
+// CONTENIDO
+
+.contenidoPages {
+    @include flexbox();
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.topicos {
+    font-size: 30px;
+    margin: 50px;
+    background-color: $colorPrincipal;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+.subtPages {
+    font-size: 25px;
+    text-decoration: underline;
+}
+
+.parrafosPages {
+    margin: 50px;
+    background-color: rgba(0, 0, 0, 0.196);
+    padding: 20px;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.imgPages {
+    @include flexbox();
+    flex-direction: row;
+    justify-content: center;
+
+    img {
+        max-width: 800px;
+        margin: 20px;
+    }
+}
+
