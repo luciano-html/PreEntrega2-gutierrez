@@ -8,7 +8,7 @@ body {
     background-image: url(../img/backgroundTextura.jpg);
 }
 
-$colorPrincipal: #fff;
+$colorPrincipal: #003E58;
 $colorRitmo: #00ffff;
 $colorAltura: rgb(157, 95, 214);
 $colorArmonia: rgb(177, 177, 177);
@@ -47,7 +47,7 @@ $colorArmonia: rgb(177, 177, 177);
 
 @mixin imagenes() {
     width: 400px;
-    outline: 1px solid black;
+    box-shadow: 7px 13px 37px #000;
     padding: 5px;
 }
 
@@ -62,11 +62,25 @@ header {
     width: 100%;
     color: white;
 
+    .contenedorLogin{
+        .volver{
+            color: white;
+            text-decoration: underline solid 1px rgba(255, 255, 255, 0);
+            outline: 1px solid white;
+            padding: 12px;
+            margin:20px;
+        }
+    }
+
     .imagenInicio {
         width: 200px;
         margin: 20px;
         padding: 8px;
         outline: solid 1px rgba(255, 255, 255, 0);
+        
+
+        
+        
 
         &:hover {
             outline: solid 1px rgba(255, 255, 255, 1);
@@ -76,6 +90,26 @@ header {
         @include md() {
             width: 150px
         }
+        @media (max-width:629px) {
+            margin:5px;
+            width: 100px;
+            
+        }
+        @media (max-width:583px) {
+            margin:5px;
+            width: 100px;
+            
+        }
+        @media (max-width:405px) {
+            width: 70px;
+            
+        }
+
+        @media (max-width:375px) {
+            width: 50px;
+            
+        }
+        
 
 
 
@@ -90,17 +124,32 @@ header {
         @include lg() {
             gap: 20px;
         }
+        @media (max-width:459px) {
+            font-size: 8px;
+            
+        }
+        
 
         .botonHeader {
             color: white;
             text-decoration: underline solid 1px rgba(255, 255, 255, 0);
             outline: 1px solid white;
             padding: 12px;
+            
 
 
             &:hover {
                 text-decoration: underline solid 1px rgba(255, 255, 255, 1);
                 transition-duration: 200ms;
+            }
+
+            @media (max-width:400px) {
+                padding: 5px;
+                
+            }
+            @media (max-width:461px) {
+                padding: 5px;
+                
             }
 
 
@@ -115,8 +164,14 @@ header {
         }
 
         @include mobile {
-            font-size: 12px
+            
         }
+        @media (max-width:556px) {
+            font-size: 8px
+        }
+        
+        
+        
     }
 
     .login {
@@ -152,11 +207,19 @@ main {
             flex-direction: column;
             gap: 50px;
         }
+        @media (max-width:583px) {
+            margin: 20px;
+            
+        }
 
 
         .texto {
             width: 60%;
             font-size: 18px;
+            @media (max-width:583px) {
+                font-size: 16px;
+                
+            }
         }
 
         .imgTarjeta1 {
@@ -166,6 +229,10 @@ main {
 
                 @include desktop() {
                     width: 300px
+                }
+                @media (max-width:583px) {
+                    width: 200px;
+                    
                 }
 
             }
@@ -194,6 +261,10 @@ main {
                 @media (max-width:1140px) {
                     width: 300px;
                 }
+                @media (max-width:583px) {
+                    width: 200px;
+                    
+                }
 
             }
         }
@@ -212,23 +283,30 @@ main {
         margin: 100px;
         gap: 100px;
 
-        .comencemos {
-            p {
-                width: 100%;
-                font-size: 50px;
-                font-weight: bold;
-
-            }
-
-        }
 
         .botoneraPrefooter {
+            .comencemos{
+                @media (max-width:583px) {
+                    font-size: 8px;
+                    
+                }
+                @media (max-width:375px) {
+                    font-size: 5px;
+                    
+                }
+            }
             @include flexbox();
             gap: 70px;
 
             @include lg() {
                 gap: 20px;
             }
+            @media (max-width:583px) {
+                gap: 7px;
+                margin: 5px;
+                
+            }
+            
 
 
             .boton {
@@ -237,6 +315,7 @@ main {
                 background-color: $colorPrincipal;
                 color: white;
                 padding: 20px;
+                
 
 
 
@@ -244,6 +323,7 @@ main {
                     text-decoration: underline solid 1px rgba(255, 255, 255, 1);
                     transition-duration: 200ms;
                 }
+                
 
                 @media (max-width:690px) {
                     font-size: 25px;
@@ -251,8 +331,10 @@ main {
                 }
 
                 @include mobile() {
-                    font-size: 20px
+                    font-size: 10px;
+                    padding: 5px;
                 }
+                
 
 
             }
@@ -261,23 +343,36 @@ main {
 }
 
 footer {
+    
     .contenedorFooter {
         @include flexbox();
         background-color: $colorPrincipal;
         flex-direction: row;
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-between;      
+
+        
 
         .ig {
             img {
                 width: 20%;
                 margin: 20px;
                 margin-left: 30px;
+                @include md(){
+                    margin-left: 10px;
+                }
+                
             }
         }
 
         .correo {
             color: white;
+            @media (max-width:500px) {
+                display: none;
+                
+            }
+            
+
         }
 
         .upper {
@@ -301,6 +396,7 @@ footer {
             @include md() {
                 display: none;
             }
+            
         }
     }
 
@@ -329,26 +425,33 @@ footer {
         margin: 0px;
         margin-top: 50px;
     }
-
-
-
-
-
-
+    
 
 
     .imagenPages1 {
+        display: flex;
+
         width: 40%;
+        align-items: center;
+        justify-content: center;
 
         img {
             @include imagenes();
+            width: 300px;
+            @media (max-width:400px) {
+                width: 200px;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                
+            }
+            
         }
 
         @include desktop() {
-            margin: 50px;
-            align-items: center;
+            margin: 0px;
+            
         }
-
+        
 
 
 
@@ -416,9 +519,17 @@ footer {
         transition-duration: 50ms;
         padding: 10px;
 
+        
+
         &:hover {
             transform: scale(1.1);
         }
+
+        @media (max-width:400px) {
+            font-size: 18px;
+            
+        }
+        
     }
 
     .botonRitmo {
@@ -451,6 +562,7 @@ footer {
         margin: 0px;
         max-width: 748px;
     }
+    
 }
 
 .topicos {
@@ -486,77 +598,113 @@ footer {
     }
 }
 
+
 .imgPages {
     @include flexbox();
+    
     flex-direction: row;
     justify-content: center;
+    
 
     img {
-        max-width: 800px;
-        margin: 20px;
+        max-width: 400px;
+        @media (max-width:400px) {
+            max-width: 370px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            
+        }
+        
+        
     }
 
-    @include lg {
-        img {
-            max-width: 600px;
-        }
-    }
+    
 }
 
 // LOGIN
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    margin: auto;
 
+
+}
 .form-register {
     width: 400px;
-    background: #24303c;
-    padding: 30px;
+    background: $colorPrincipal;
+    padding: 55px;
     margin: auto;
     margin-top: 100px;
-    margin-bottom: 200px;
+    margin-bottom: 30vh;
     border-radius: 4px;
     font-family: 'calibri';
     color: white;
     box-shadow: 7px 13px 37px #000;
 
-.form-register h4 {
-    font-size: 22px;
-    margin-bottom: 20px;
+    @include md(){
+        scale: 0.8 ;
+    }
+    @media (max-width:480px) {
+        margin-top: 5px;
+        scale: 0.7;
+        
+    }
+    @media (max-width:470px) {
+        margin-top: 5px;
+        scale: 0.65;
+        
+    }
+    
+    
+    
+
+
+    h4 {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+    .controls {
+        width: 100%;
+        background: #24303c;
+        padding: 10px;
+        border-radius: 4px;
+        margin-bottom: 16px;
+        border: 1px solid #1f53c5;
+        font-family: 'calibri';
+        font-size: 18px;
+        color: white;
+
+    }
+    p {
+        height: 40px;
+        text-align: center;
+        font-size: 18px;
+        line-height: 40px;
+        @media (max-width:442px) {
+            margin: 20px;
+        }
+    }
+    a {
+        color: white;
+        text-decoration: none;
+        &:hover {
+            
+            text-decoration: underline;
+        }
+        
+    }
+    
+    .botons {
+        width: 100%;
+        background: #1f53c5;
+        border: none;
+        padding: 12px;
+        color: white;
+        margin: 16px 0;
+        font-size: 16px;
+        
+    }
 }
 
-.controls {
-    width: 100%;
-    background: #24303c;
-    padding: 10px;
-    border-radius: 4px;
-    margin-bottom: 16px;
-    border: 1px solid #1f53c5;
-    font-family: 'calibri';
-    font-size: 18px;
-    color: white;
-}
-
-.form-register p {
-    height: 40px;
-    text-align: center;
-    font-size: 18px;
-    line-height: 40px;
-}
-
-.form-register a {
-    color: white;
-    text-decoration: none;
-}
-
-.form-register a:hover {
-    color: white;
-    text-decoration: underline;
-}
-
-.form-register .botons {
-    width: 100%;
-    background: #1f53c5;
-    border: none;
-    padding: 12px;
-    color: white;
-    margin: 16px 0;
-    font-size: 16px;
-}
