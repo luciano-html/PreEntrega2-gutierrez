@@ -1,0 +1,61 @@
+footer {
+    
+    .contenedorFooter {
+        @include flexbox();
+        background-color: $colorPrincipal;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;      
+
+        
+
+        .ig {
+            img {
+                width: 20%;
+                margin: 20px;
+                margin-left: 30px;
+                @include md(){
+                    margin-left: 10px;
+                }
+                
+            }
+        }
+
+        .correo {
+            color: white;
+            @media (max-width:500px) {
+                display: none;
+                
+            }
+            
+
+        }
+
+        .upper {
+            img {
+                width: 75px;
+                margin: 20px;
+            }
+        }
+
+        .botonHeader {
+            color: white;
+            padding: 15px;
+            outline: 1px solid white;
+            text-decoration: underline solid 1px rgba(255, 255, 255, 0);
+
+            &:hover {
+                text-decoration: underline solid 1px rgba(255, 255, 255, 1);
+                transition-duration: 200ms;
+            }
+
+            @include md() {
+                display: none;
+            }
+            
+        }
+    }
+
+
+
+}

@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url(../img/backgroundTextura.jpg);
+}
+
+
+.contPages1 {
+    @include flexbox();
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin: 100px;
+
+
+    @include desktop() {
+        flex-direction: column-reverse;
+
+        margin: 20px;
+    }
+
+    @include md() {
+        max-width: 690px;
+        margin: 0px;
+        margin-top: 50px;
+    }
+
+
+
+    .imagenPages1 {
+        display: flex;
+
+        width: 40%;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            @include imagenes();
+            width: 300px;
+
+            @media (max-width:400px) {
+                width: 200px;
+                margin-top: 20px;
+                margin-bottom: 20px;
+
+            }
+
+        }
+
+        @include desktop() {
+            margin: 0px;
+
+        }
+
+
+
+
+
+    }
+
+
+    .textoPages {
+        width: 60%;
+
+        .tituloPages {
+            font-size: 36px;
+            margin-bottom: 20px;
+            width: 100%;
+        }
+
+        .introPages {
+            font-size: 22px;
+
+            @include lg() {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.botonIndice {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 60px;
+    justify-items: center;
+    align-items: center;
+    margin-bottom: 50px;
+
+    .botonPages {
+        text-decoration: none;
+        font-size: 25px;
+        margin-top: 25px;
+        transition-duration: 50ms;
+        padding: 10px;
+
+
+
+        &:hover {
+            transform: scale(1.1);
+        }
+
+        @media (max-width:400px) {
+            font-size: 18px;
+
+        }
+
+    }
+
+}
+
+// CONTENIDO
+
+.contenidoPages {
+    @include flexbox();
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    @include md() {
+        margin: 0px;
+        max-width: 748px;
+    }
+
+}
+
+.topicos {
+    font-size: 30px;
+    margin: 50px;
+    background-color: $colorPrincipal;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.subtPages {
+    font-size: 25px;
+    text-decoration: underline;
+
+    @include md() {
+        margin-bottom: 5px;
+
+    }
+}
+
+.parrafosPages {
+    margin: 50px;
+    background-color: rgba(0, 0, 0, 0.196);
+    padding: 20px;
+    font-size: 18px;
+    line-height: 25px;
+
+    @include md() {
+        margin-bottom: 30px;
+
+    }
+}
+
+.imgPages {
+    @include flexbox();
+    
+    flex-direction: row;
+    justify-content: center;
+    
+
+    img {
+        max-width: 400px;
+        @media (max-width:400px) {
+            max-width: 370px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            
+        }
+        
+        
+    }
+
+    
+}
