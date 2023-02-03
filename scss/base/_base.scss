@@ -7,7 +7,9 @@ body {
     font-family: 'Roboto', sans-serif;
     background-image: url(../img/backgroundTextura.jpg);
 }
-
+html{
+    scroll-behavior: smooth
+}
 
 .contPages1 {
     @include flexbox();
@@ -15,21 +17,16 @@ body {
     justify-content: center;
     flex-direction: row;
     margin: 100px;
-
-
     @include desktop() {
         flex-direction: column-reverse;
 
         margin: 20px;
     }
-
     @include md() {
         max-width: 690px;
         margin: 0px;
         margin-top: 50px;
     }
-
-
 
     .imagenPages1 {
         display: flex;
@@ -46,22 +43,12 @@ body {
                 width: 200px;
                 margin-top: 20px;
                 margin-bottom: 20px;
-
             }
-
         }
-
         @include desktop() {
             margin: 0px;
-
         }
-
-
-
-
-
     }
-
 
     .textoPages {
         width: 60%;
@@ -97,17 +84,13 @@ body {
         transition-duration: 50ms;
         padding: 10px;
 
-
-
         &:hover {
             transform: scale(1.1);
         }
 
         @media (max-width:400px) {
             font-size: 18px;
-
         }
-
     }
 
 }
@@ -163,22 +146,24 @@ body {
 
 .imgPages {
     @include flexbox();
-    
+
     flex-direction: row;
     justify-content: center;
-    
+
 
     img {
-        max-width: 400px;
+        max-width: 1000px;
+        margin-bottom : 30px;
+
         @media (max-width:400px) {
             max-width: 370px;
             margin-top: 20px;
             margin-bottom: 20px;
-            
+
         }
-        
-        
+
+
     }
 
-    
+
 }

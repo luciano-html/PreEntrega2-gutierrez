@@ -8,6 +8,10 @@ body {
   background-image: url(../img/backgroundTextura.jpg);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .contPages1 {
   display: flex;
   flex-wrap: wrap;
@@ -149,7 +153,8 @@ body {
   justify-content: center;
 }
 .imgPages img {
-  max-width: 400px;
+  max-width: 1000px;
+  margin-bottom: 30px;
 }
 @media (max-width: 400px) {
   .imgPages img {
