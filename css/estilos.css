@@ -33,6 +33,12 @@ html {
     margin-top: 50px;
   }
 }
+@media (max-width: 404px) {
+  .contPages1 {
+    scale: 0.95;
+    margin-bottom: 0px;
+  }
+}
 .contPages1 .imagenPages1 {
   display: flex;
   width: 40%;
@@ -46,11 +52,16 @@ html {
   width: 300px;
   margin-top: 50px;
 }
-@media (max-width: 400px) {
+@media (max-width: 425px) {
   .contPages1 .imagenPages1 img {
     width: 200px;
     margin-top: 20px;
     margin-bottom: 20px;
+  }
+}
+@media (max-width: 378px) {
+  .contPages1 .imagenPages1 img {
+    width: 180px;
   }
 }
 @media (max-width: 1300px) {
@@ -113,6 +124,11 @@ html {
     max-width: 748px;
   }
 }
+@media (max-width: 406px) {
+  .contenidoPages {
+    scale: 0.95;
+  }
+}
 
 .topicos {
   font-size: 30px;
@@ -122,6 +138,18 @@ html {
   display: flex;
   justify-content: center;
   padding: 10px;
+}
+@media (max-width: 420px) {
+  .topicos {
+    font-size: 28px;
+  }
+}
+@media (max-width: 385px) {
+  .topicos {
+    scale: 0.95;
+    margin-bottom: 0px;
+    margin: 20px;
+  }
 }
 
 .subtPages {
@@ -137,7 +165,11 @@ html {
 @media (max-width: 420px) {
   .subtPages {
     font-size: 18px;
-    overflow: hidden;
+  }
+}
+@media (max-width: 420px) {
+  .subtPages {
+    font-size: 16px;
   }
 }
 

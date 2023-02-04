@@ -6,9 +6,11 @@
 body {
     font-family: 'Roboto', sans-serif;
     background-image: url(../img/backgroundTextura.jpg);
+    
 }
 html{
-    scroll-behavior: smooth
+    scroll-behavior: smooth;
+    
 }
 
 .contPages1 {
@@ -27,6 +29,10 @@ html{
         margin: 0px;
         margin-top: 50px;
     }
+    @media (max-width:404px) {
+        scale: 0.95;
+        margin-bottom: 0px;
+    }
 
     .imagenPages1 {
         display: flex;
@@ -40,10 +46,13 @@ html{
             width: 300px;
             margin-top: 50px;
 
-            @media (max-width:400px) {
+            @media (max-width:425px) {
                 width: 200px;
                 margin-top: 20px;
                 margin-bottom: 20px;
+            }
+            @media (max-width:378px) {
+                width: 180px;
             }
         }
         @include desktop() {
@@ -68,6 +77,8 @@ html{
             }
         }
     }
+
+    
 }
 
 .botonIndice {
@@ -110,6 +121,10 @@ html{
         max-width: 748px;
     }
 
+    @media (max-width:406px) {
+        scale: 0.95;
+    }
+
 }
 
 .topicos {
@@ -120,6 +135,16 @@ html{
     display: flex;
     justify-content: center;
     padding: 10px;
+
+    @media (max-width:420px) {
+        font-size: 28px;
+        
+    }
+    @media (max-width:385px) {
+        scale: 0.95;
+        margin-bottom: 0px;
+        margin: 20px;
+    }
 }
 
 .subtPages {
@@ -133,9 +158,15 @@ html{
     }
     @media (max-width:420px) {
         font-size: 18px;
-        overflow: hidden;
+        
 
     }
+    @media (max-width:420px) {
+        font-size: 16px;
+        
+
+    }
+
 }
 
 .parrafosPages {
