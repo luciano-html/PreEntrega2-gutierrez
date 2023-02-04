@@ -121,9 +121,7 @@ html{
         max-width: 748px;
     }
 
-    @media (max-width:406px) {
-        scale: 0.95;
-    }
+    
 
 }
 
@@ -141,7 +139,7 @@ html{
         
     }
     @media (max-width:385px) {
-        scale: 0.95;
+        font-size: 22px;
         margin-bottom: 0px;
         margin: 20px;
     }
@@ -153,7 +151,7 @@ html{
 
     @include md() {
         margin: auto;
-        margin-bottom: 5px;
+        
 
     }
     @media (max-width:420px) {
