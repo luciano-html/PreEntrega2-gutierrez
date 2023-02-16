@@ -53,11 +53,6 @@ html {
   width: 300px;
   margin-top: 50px;
 }
-@media (max-width: 1050px) {
-  .contPages1 .imagenPages1 img {
-    width: 90%;
-  }
-}
 @media (max-width: 425px) {
   .contPages1 .imagenPages1 img {
     width: 200px;
@@ -104,10 +99,10 @@ html {
   flex-direction: column;
   justify-items: center;
   align-items: center;
-  margin-bottom: 50px;
   width: 25%;
   position: sticky;
   top: 133.42px;
+  margin-bottom: 50px;
   margin: 10px;
 }
 .botonIndice .botonPages {
@@ -129,6 +124,7 @@ html {
   display: flex;
   position: sticky;
   top: 0;
+  margin-top: 50px;
 }
 .botonIndice .upper img {
   background-color: black;
@@ -153,15 +149,22 @@ html {
 }
 
 .cuerpo {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   width: 65%;
 }
 
 .topicos {
-  font-size: 30px;
-  background-color: #003E58;
-  color: white;
   display: flex;
   justify-content: center;
+  border-radius: 5px;
+  font-size: 30px;
+  margin: 20px;
+  padding: 25px;
+  width: 50%;
+  background-color: #003E58;
+  color: white;
 }
 @media (max-width: 420px) {
   .topicos {
@@ -177,8 +180,14 @@ html {
 }
 
 .subtPages {
-  font-size: 25px;
-  text-decoration: underline;
+  font-size: 18px;
+  text-decoration: none;
+  margin: 25px;
+  border-radius: 5px;
+  background-color: rgba(0, 62, 88, 0.9098039216);
+  margin: 25px;
+  padding: 25px;
+  color: white;
 }
 @media (max-width: 748px) {
   .subtPages {
@@ -198,6 +207,7 @@ html {
 
 .parrafosPages {
   background-color: rgba(0, 0, 0, 0.196);
+  margin-top: 25px;
   padding: 20px;
   font-size: 18px;
   line-height: 25px;
@@ -213,10 +223,16 @@ html {
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
+  margin: 25px;
+  outline: 5px solid #003E58;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: rgba(0, 62, 88, 0.368627451);
 }
 .imgPages img {
   max-width: 680px;
-  margin-bottom: 30px;
+  margin: 5px;
 }
 @media (max-width: 1000px) {
   .imgPages img {

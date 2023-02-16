@@ -17,7 +17,7 @@ html {
 
 
 // CONTENIDO
-
+// TARJETA
 .contPages1 {
     @include flexbox();
     align-items: center;
@@ -54,10 +54,6 @@ html {
             @include imagenes();
             width: 300px;
             margin-top: 50px;
-
-            @media (max-width:1050px) {
-                width: 90%;
-            }
 
             @media (max-width:425px) {
                 width: 200px;
@@ -105,14 +101,18 @@ html {
     display: flex;
     height: 100px;
     width: 25%;
+
     flex-direction: column;
     justify-items:center;
     align-items: center;
-    margin-bottom: 50px;
+    
     width: 25%;
     position: sticky;
+    
     top: 133.42px;
+    margin-bottom: 50px;
     margin: 10px;
+    
 
 
     .botonPages {
@@ -136,6 +136,8 @@ html {
         display: flex;
         position: sticky;
         top: 0;
+        margin-top: 50px;
+
         
 
 
@@ -154,7 +156,7 @@ html {
 }
 
 
-
+// CUERPO
 .contenidoPages {
     @include flexbox();
     flex-direction: row;
@@ -175,18 +177,25 @@ html {
 }
 
 .cuerpo {
-
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     width: 65%;
 
 }
 
 .topicos {
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
     font-size: 30px;
+    margin: 20px;
+    padding: 25px;
+    width: 50%;
 
     background-color: $colorPrincipal;
     color: white;
-    display: flex;
-    justify-content: center;
+    
 
 
 
@@ -203,8 +212,15 @@ html {
 }
 
 .subtPages {
-    font-size: 25px;
-    text-decoration: underline;
+    font-size: 18px;
+    text-decoration: none;
+    margin: 25px;
+    border-radius: 5px;
+    background-color: #003e58e8;
+    margin: 25px;
+    padding: 25px;
+    color: white;
+    
 
     @include md() {
         margin: auto;
@@ -227,8 +243,8 @@ html {
 }
 
 .parrafosPages {
-
     background-color: rgba(0, 0, 0, 0.196);
+    margin-top: 25px;
     padding: 20px;
     font-size: 18px;
     line-height: 25px;
@@ -244,11 +260,17 @@ html {
 
     flex-direction: row;
     justify-content: center;
+    align-items: center;
+    margin: 25px;
+    outline: 5px solid #003E58;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #003e585e;
 
 
     img {
         max-width: 680px;
-        margin-bottom: 30px;
+        margin: 5px;
 
 
 
