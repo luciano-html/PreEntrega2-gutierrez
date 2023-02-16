@@ -19,6 +19,7 @@ html {
   justify-content: center;
   flex-direction: row;
   margin: 100px;
+  height: 80vh;
 }
 @media (max-width: 1300px) {
   .contPages1 {
@@ -52,6 +53,11 @@ html {
   width: 300px;
   margin-top: 50px;
 }
+@media (max-width: 1050px) {
+  .contPages1 .imagenPages1 img {
+    width: 90%;
+  }
+}
 @media (max-width: 425px) {
   .contPages1 .imagenPages1 img {
     width: 200px;
@@ -72,6 +78,11 @@ html {
 .contPages1 .textoPages {
   width: 60%;
 }
+@media (max-width: 1050px) {
+  .contPages1 .textoPages {
+    width: 100%;
+  }
+}
 .contPages1 .textoPages .tituloPages {
   font-size: 36px;
   margin-bottom: 20px;
@@ -87,36 +98,52 @@ html {
 }
 
 .botonIndice {
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: 60px;
+  display: flex;
+  height: 100px;
+  width: 25%;
+  flex-direction: column;
   justify-items: center;
   align-items: center;
   margin-bottom: 50px;
+  width: 25%;
+  position: sticky;
+  top: 133.42px;
+  margin: 10px;
 }
 .botonIndice .botonPages {
   text-decoration: none;
-  font-size: 25px;
+  font-size: 18px;
   margin-top: 25px;
   transition-duration: 50ms;
   padding: 10px;
 }
 .botonIndice .botonPages:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 @media (max-width: 400px) {
   .botonIndice .botonPages {
     font-size: 18px;
   }
 }
+.botonIndice .upper {
+  display: flex;
+  position: sticky;
+  top: 0;
+}
+.botonIndice .upper img {
+  background-color: black;
+  width: 75px;
+  margin: 20px;
+  border-radius: 100%;
+}
 
 .contenidoPages {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-around;
   width: 100%;
+  margin: auto;
 }
 @media (max-width: 748px) {
   .contenidoPages {
@@ -125,14 +152,16 @@ html {
   }
 }
 
+.cuerpo {
+  width: 65%;
+}
+
 .topicos {
   font-size: 30px;
-  margin: 50px;
   background-color: #003E58;
   color: white;
   display: flex;
   justify-content: center;
-  padding: 10px;
 }
 @media (max-width: 420px) {
   .topicos {
@@ -168,7 +197,6 @@ html {
 }
 
 .parrafosPages {
-  margin: 50px;
   background-color: rgba(0, 0, 0, 0.196);
   padding: 20px;
   font-size: 18px;
@@ -187,7 +215,7 @@ html {
   justify-content: center;
 }
 .imgPages img {
-  max-width: 800px;
+  max-width: 680px;
   margin-bottom: 30px;
 }
 @media (max-width: 1000px) {
@@ -289,11 +317,6 @@ header .botoneraHeader .botonHeader:hover, header .botoneraHeader .login .botonL
   text-decoration: underline solid 1px rgb(255, 255, 255);
   transition-duration: 200ms;
 }
-@media (max-width: 400px) {
-  header .botoneraHeader .botonHeader, header .botoneraHeader .login .botonLogin, header .login .botoneraHeader .botonLogin {
-    padding: 5px;
-  }
-}
 @media (max-width: 461px) {
   header .botoneraHeader .botonHeader, header .botoneraHeader .login .botonLogin, header .login .botoneraHeader .botonLogin {
     padding: 5px;
@@ -351,10 +374,6 @@ footer .contenedorFooter .correo {
   footer .contenedorFooter .correo {
     display: none;
   }
-}
-footer .contenedorFooter .upper img {
-  width: 75px;
-  margin: 20px;
 }
 footer .contenedorFooter .botonHeader, footer .contenedorFooter header .login .botonLogin, header .login footer .contenedorFooter .botonLogin {
   color: white;
