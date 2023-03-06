@@ -272,7 +272,7 @@ header .contenedorLogin .volver {
 header .imagenInicio {
   width: 200px;
   margin: 20px;
-  padding: 8px;
+  padding: 2px;
   outline: solid 1px rgba(255, 255, 255, 0);
 }
 header .imagenInicio:hover {
