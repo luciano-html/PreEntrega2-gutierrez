@@ -1,46 +1,68 @@
-form{
+.main {
+    height: 100vh;
+}
+
+.flexSwitch {
+    width: auto;
+}
+
+.tituloJS {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+form {
     display: flex;
     align-items: center;
     justify-content: center;
     width: auto;
-    margin: auto;
-
-
+    margin: 20px;
 }
+
 .form-register {
     width: 400px;
     background: $colorPrincipal;
     padding: 55px;
-    margin: auto;
-    margin-top: 100px;
-    margin-bottom: 30vh;
+    margin: 20px;
+
+
     border-radius: 4px;
     font-family: 'calibri';
     color: white;
     box-shadow: 7px 13px 37px #000;
 
-    @include md(){
-        scale: 0.8 ;
-    }
-    @media (max-width:480px) {
-        margin-top: 5px;
-        scale: 0.7;
-        
-    }
-    @media (max-width:470px) {
-        margin-top: 5px;
-        scale: 0.65;
-        
-    }
-    
-    
-    
+    // @include md(){
+    //     scale: 0.8 ;
+    // }
+    // @media (max-width:480px) {
+    //     margin-top: 5px;
+    //     scale: 0.7;
+
+    // }
+    // @media (max-width:470px) {
+    //     margin-top: 5px;
+    //     scale: 0.65;
+
+    // }
+
+
+
 
 
     h4 {
         font-size: 22px;
         margin-bottom: 20px;
     }
+
     .controls {
         width: 100%;
         background: #24303c;
@@ -53,25 +75,29 @@ form{
         color: white;
 
     }
+
     p {
         height: 40px;
         text-align: center;
         font-size: 18px;
         line-height: 40px;
+
         @media (max-width:442px) {
             margin: 20px;
         }
     }
+
     a {
         color: white;
         text-decoration: none;
+
         &:hover {
-            
+
             text-decoration: underline;
         }
-        
+
     }
-    
+
     .botons {
         width: 100%;
         background: #1f53c5;
@@ -80,6 +106,6 @@ form{
         color: white;
         margin: 16px 0;
         font-size: 16px;
-        
+
     }
 }

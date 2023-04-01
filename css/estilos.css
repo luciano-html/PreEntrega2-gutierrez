@@ -572,42 +572,45 @@ main .prefooter .botoneraPrefooter .boton:hover {
   background: #00ffff;
 }
 
+.main {
+  height: 100vh;
+}
+
+.flexSwitch {
+  width: auto;
+}
+
+.tituloJS {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
 form {
   display: flex;
   align-items: center;
   justify-content: center;
   width: auto;
-  margin: auto;
+  margin: 20px;
 }
 
 .form-register {
   width: 400px;
   background: #003E58;
   padding: 55px;
-  margin: auto;
-  margin-top: 100px;
-  margin-bottom: 30vh;
+  margin: 20px;
   border-radius: 4px;
   font-family: "calibri";
   color: white;
   box-shadow: 7px 13px 37px #000;
-}
-@media (max-width: 748px) {
-  .form-register {
-    scale: 0.8;
-  }
-}
-@media (max-width: 480px) {
-  .form-register {
-    margin-top: 5px;
-    scale: 0.7;
-  }
-}
-@media (max-width: 470px) {
-  .form-register {
-    margin-top: 5px;
-    scale: 0.65;
-  }
 }
 .form-register h4 {
   font-size: 22px;
